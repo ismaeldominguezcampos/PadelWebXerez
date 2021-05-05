@@ -40,21 +40,13 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Hangfire.AspNetCore": {
+            "EFCore.BulkExtensions": {
               "target": "Package",
-              "version": "[1.7.22, )"
+              "version": "[5.1.7, )"
             },
-            "Hangfire.Core": {
+            "EntityFramework.Functions": {
               "target": "Package",
-              "version": "[1.7.22, )"
-            },
-            "Hangfire.Dashboard.Authorization": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Hangfire.SqlServer": {
-              "target": "Package",
-              "version": "[1.7.22, )"
+              "version": "[1.5.0, )"
             },
             "MailKit": {
               "target": "Package",
@@ -63,6 +55,10 @@
             "Microsoft.AspNetCore.HttpOverrides": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
@@ -104,6 +100,10 @@
               "target": "Package",
               "version": "[5.0.5, )"
             },
+            "Microsoft.Extensions.Localization": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
@@ -127,6 +127,14 @@
             "Syncfusion.Licensing": {
               "target": "Package",
               "version": "[19.1.0.59, )"
+            },
+            "System.Console": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.2.9, )"
             }
           },
           "imports": [

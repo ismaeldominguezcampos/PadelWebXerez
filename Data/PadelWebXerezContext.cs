@@ -16,6 +16,9 @@ namespace PadelWebXerez
         }
         //Pista
         public DbSet<Pista> Pistas { get; set; }
+
+        //Horarios
+        public DbSet<Horario> Horarios { get; set; }
         //Usuario
         //public DbSet<Usuario> Usuarios { get; set; }
         
@@ -29,6 +32,9 @@ namespace PadelWebXerez
 
             //Pista
             builder.AddConfiguration(new PistaConfiguration());
+
+            //Horario
+            builder.AddConfiguration(new HorarioConfiguration());
 
         }
 

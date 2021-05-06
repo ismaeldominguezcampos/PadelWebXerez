@@ -12,9 +12,9 @@ namespace PadelWebXerez
         {
             builder.ToTable("Horarios", schema: "PadelWebXerez");
 
-            builder.Property(e => e.HoraApertura);
+            builder.Property(e => e.HoraApertura).HasColumnType("datetime");
 
-            builder.Property(e => e.HoraCierre);
+            builder.Property(e => e.HoraCierre).HasColumnType("datetime");
 
             builder.Property(e => e.DiaSemana);
 

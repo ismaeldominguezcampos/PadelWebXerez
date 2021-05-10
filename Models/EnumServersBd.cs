@@ -1,5 +1,5 @@
 ﻿using System;
-namespace PadelWebXerez
+namespace PadelWebXerez.Models
 {
     public enum EnumServersBd : byte
     {

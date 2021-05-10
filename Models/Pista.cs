@@ -19,7 +19,7 @@ namespace PadelWebXerez.Models
         #endregion
 
         #region propiedades de navegacion
-           public Horario Horario { get; set; }
+        public Horario Horario { get; set; }
         #endregion
 
         #region Valores por defecto

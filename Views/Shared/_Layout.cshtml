@@ -13,26 +13,28 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-primary border-bottom box-shadow mb-3">
             <div class="container">
                 <nav class="navbar navbar-light bg-light">
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                         <img src="~/img/Fotos Finales - Padel Game Xerez/Detalles/logo.jpg" width="50" height="50" alt="">
                     </a>
                 </nav>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            </div>
+            <div class="container col-4">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between float-sm-left">
                     <ul class="navbar-nav flex-grow-1 ali">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                            <a class="nav-link text-white text-uppercase font-weight-bold" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="SobreNosotros" asp-action="SobreNosotros">Sobre Nosotros</a>
+                            <a class="nav-link text-white text-uppercase font-weight-bold" asp-area="" asp-controller="SobreNosotros" asp-action="SobreNosotros">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Contacta" asp-action="Contacta">Contacta</a>
+                            <a class="nav-link text-white text-uppercase font-weight-bold" asp-area="" asp-controller="Contacta" asp-action="Contacta">Contacta</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Reserva" asp-action="Reserva">Reserva</a>
+                            <a class="nav-link text-white text-uppercase font-weight-bold" asp-area="" asp-controller="Reserva" asp-action="Reserva">Reserva</a>
                         </li>
 
                     </ul>
@@ -40,15 +42,15 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container col-12">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-white bg-primary">
         <div class="container text-center">
-            &copy; 2021 - PadelWebXerez - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2021 - PadelWebXerez - Ismael Dominguez Campos - <a class="text-white-50" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

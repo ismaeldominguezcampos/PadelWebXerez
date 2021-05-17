@@ -1,8 +1,93 @@
 ﻿@{
     ViewData["Title"] = "Contacta";
 }
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+</script>
 
-<div class="text-center">
-    <h1 class="display-4">Contacta con nosotros</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<br />
+
+<div class="container text-white">
+    <h1 class="display-4 text-center">CONTACTA CON NOSOTROS</h1>
+    <hr class="border-primary w-25" />
+    <br />
+    <div class="row">
+        <section class="col-6">
+            <div class="row">
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="name" class="">Nombre</label>
+                                    <input type="text" id="name" name="name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="email" class="">Email</label>
+                                    <input type="text" id="email" name="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <label for="subject" class="">Asunto</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <label for="message">Escribe tu mensaje.</label>
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary text-center" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="col-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12800.71325634459!2d-6.139306152624502!3d36.6702134990095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48d74442d705783d!2sPadel%20Game%20Xerez!5e0!3m2!1ses!2ses!4v1620899052880!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <hr class="border-primary w-25" />
+    <br />
+    <div class="text-center">
+        <a href="https://www.instagram.com/padelgamexerez/"><img src="~/img/RRSS/instagram.svg" class="rounded-circle bg-white" alt="instagram" width="50" height="50"></a>
+        <a href="https://www.facebook.com/PadelGameXerez2018"><img src="~/img/RRSS/facebook.svg" class="rounded-circle bg-white" alt="facebook" width="50" height="50"></a>
+        <a href="https://twitter.com/PadelGameXerez"><img src="~/img/RRSS/twitter.svg" class="rounded-circle bg-white" alt="twitter" width="50" height="50"></a>
+        
+        <button type="button" class="btn btn-dark text-white bg-transparent border-0" data-toggle="modal" data-target="#ModalCenter">
+            <img src="~/img/RRSS/whatsapp.svg" class="rounded-circle bg-white" alt="whatsapp" width="50" height="50">
+        </button>
+
+        <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-dark">
+                        <h5 class="modal-title" id="ModalLongTitle">WhatsApp</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-dark">
+                        Envíanos un mensaje al número: (+34) 111222333
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

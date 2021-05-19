@@ -12,8 +12,10 @@ namespace PadelWebXerez
         {
             builder.ToTable("Pistas", schema: "PadelWebXerez");
 
-            builder.Property(e => e.Numero).HasMaxLength(1);
+            builder.Property(e => e.Numero).IsRequired().HasMaxLength(1);
 
+            builder.Property(e => e.PrecioPorHora).HasColumnType("decimal(18,3)");
+            builder.Property(e => e.Disponible).HasMaxLength(256);
             builder.Property(e => e.PrecioPorHora).HasMaxLength(256);
 
             builder.Property(e => e.Timestamp).IsConcurrencyToken();

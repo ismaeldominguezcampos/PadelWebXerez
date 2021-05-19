@@ -13,12 +13,13 @@ namespace PadelWebXerez.Models
 
         public DateTime HoraCierre { get; set; }
 
-        public EnumDiaSemana DiaSemana { get; set; }
+        public DayOfWeek DiaSemana { get; set; }
 
         #endregion
 
         #region propiedades de navegacion
 
+        public Pista Pista { get; set; }
 
         #endregion
 

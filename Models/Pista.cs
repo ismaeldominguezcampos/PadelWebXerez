@@ -26,6 +26,7 @@ namespace PadelWebXerez.Models
 
         public Pista()
         {
+            this.PrecioPorHora = 20;
         }
 
         #endregion

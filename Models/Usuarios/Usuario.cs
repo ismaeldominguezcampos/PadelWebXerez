@@ -6,7 +6,7 @@ namespace PadelWebXerez.Models
 {
     public class Usuario : IdentityUser
     {
-        #region propiedades
+        #region Campos de la tabla
        
         public string DNI { get; set; }
         
@@ -30,6 +30,12 @@ namespace PadelWebXerez.Models
 
         #endregion
 
+        #region Propiedades de navegacion
+
+        public Reserva Reserva { get; set; }
+
+        #endregion
+
         #region Propiedades no mapeadas
 
         public string FullName { get; set; }
@@ -46,29 +52,6 @@ namespace PadelWebXerez.Models
             get
             {
                 return this.Nombre + " " + this.Apellidos;
-            }
-        }
-
-        public string Iniciales
-        {
-            get
-            {
-                //Extraer las 2 letras para el Icono
-                string[] nombre = this.NombreCompleto.Split(' ');
-                string inicial = "";
-                if (nombre.Length > 0)
-                {
-                    inicial += nombre[0].Length > 0 ? nombre[0].Substring(0, 1) : "";
-                }
-                if (nombre.Length > 1 && nombre[1].Length > 0)
-                {
-                    inicial += nombre[1].Substring(0, 1);
-                }
-                else
-                {
-                    inicial += nombre[0].Length > 1 ? nombre[0].Substring(1, 1) : "";
-                }
-                return inicial;
             }
         }
 

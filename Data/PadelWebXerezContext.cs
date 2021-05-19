@@ -20,8 +20,11 @@ namespace PadelWebXerez
         //Horarios
         public DbSet<Horario> Horarios { get; set; }
         //Usuario
-        //public DbSet<Usuario> Usuarios { get; set; }
-        
+        public DbSet<Usuario> Usuarios { get; set; }
+
+        //Cobro
+        public DbSet<Cobro> Cobros { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -34,7 +37,12 @@ namespace PadelWebXerez
             builder.AddConfiguration(new PistaConfiguration());
 
             //Horario
-            builder.AddConfiguration(new HorarioConfiguration());
+            builder.AddConfiguration(new HorarioConfiguration()); 
+            
+            //Corbo
+            builder.AddConfiguration(new CobroConfiguration());
+
+
 
         }
 

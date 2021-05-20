@@ -21,7 +21,6 @@ namespace PadelWebXerez
         public DbSet<Horario> Horarios { get; set; }
         //Usuario
         public DbSet<Usuario> Usuarios { get; set; }
-
         //Cobro
         public DbSet<Cobro> Cobros { get; set; }
 
@@ -39,7 +38,7 @@ namespace PadelWebXerez
             //Horario
             builder.AddConfiguration(new HorarioConfiguration()); 
             
-            //Corbo
+            //Cobro
             builder.AddConfiguration(new CobroConfiguration());
 
 
